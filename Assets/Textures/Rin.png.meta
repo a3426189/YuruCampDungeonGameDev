@@ -1,0 +1,1520 @@
+fileFormatVersion: 2
+guid: e758e4ba703ad2c439acfb7fe0a08cc2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 138658877585254224
+    second: Rin_0
+  - first:
+      213: -5903984798567942696
+    second: Rin_1
+  - first:
+      213: 4248311548122865132
+    second: Rin_2
+  - first:
+      213: -4845770576283155828
+    second: Rin_3
+  - first:
+      213: -6658290872813885537
+    second: Rin_4
+  - first:
+      213: 2451418270769643757
+    second: Rin_5
+  - first:
+      213: 22451447073735519
+    second: Rin_6
+  - first:
+      213: 2891876144531442146
+    second: Rin_7
+  - first:
+      213: -1133804918080290752
+    second: Rin_8
+  - first:
+      213: -4958505035569285368
+    second: Rin_9
+  - first:
+      213: 8947639065446752180
+    second: Rin_10
+  - first:
+      213: -2574331397661047156
+    second: Rin_11
+  - first:
+      213: -8950646200304839067
+    second: Rin_12
+  - first:
+      213: -4939780649406357904
+    second: Rin_13
+  - first:
+      213: -6828325449127845685
+    second: Rin_14
+  - first:
+      213: 7250881364578898190
+    second: Rin_15
+  - first:
+      213: -6204431471099518956
+    second: Rin_16
+  - first:
+      213: 2081305289774591318
+    second: Rin_17
+  - first:
+      213: 1760838654063153370
+    second: Rin_18
+  - first:
+      213: -5305949166402548592
+    second: Rin_19
+  - first:
+      213: -5746032600991832949
+    second: Rin_20
+  - first:
+      213: 2324081997056953321
+    second: Rin_21
+  - first:
+      213: -4942432955120362624
+    second: Rin_22
+  - first:
+      213: -2604280081075700434
+    second: Rin_23
+  - first:
+      213: -3361229871252871425
+    second: Rin_24
+  - first:
+      213: -1093182034385485721
+    second: Rin_25
+  - first:
+      213: -5348635664841051400
+    second: Rin_26
+  - first:
+      213: 754216397837824356
+    second: Rin_27
+  - first:
+      213: -6947201937926469285
+    second: Rin_28
+  - first:
+      213: -8732166759620787676
+    second: Rin_29
+  - first:
+      213: -5120010244405644622
+    second: Rin_30
+  - first:
+      213: 7546105084977116503
+    second: Rin_31
+  - first:
+      213: -3209788560408412114
+    second: Rin_32
+  - first:
+      213: -6793955165971336712
+    second: Rin_33
+  - first:
+      213: -2823663239403096125
+    second: Rin_34
+  - first:
+      213: -7187371289050263405
+    second: Rin_35
+  - first:
+      213: -3156619443627030817
+    second: Rin_36
+  - first:
+      213: -2399156010765754257
+    second: Rin_37
+  - first:
+      213: 7662758190931975580
+    second: Rin_38
+  - first:
+      213: 6186058713084424764
+    second: Rin_39
+  - first:
+      213: 3928102547259218164
+    second: Rin_40
+  - first:
+      213: -2040244257463184086
+    second: Rin_41
+  - first:
+      213: -6611252924122408862
+    second: Rin_42
+  - first:
+      213: -4465185053219275258
+    second: Rin_43
+  - first:
+      213: 4862612128373752542
+    second: Rin_44
+  - first:
+      213: 1483863545158295896
+    second: Rin_45
+  - first:
+      213: -9164022714478404752
+    second: Rin_46
+  - first:
+      213: 858490377875294711
+    second: Rin_47
+  - first:
+      213: -1125190158373238344
+    second: Rin_48
+  - first:
+      213: -1516337096694153145
+    second: Rin_49
+  - first:
+      213: -6336618738013269966
+    second: Rin_50
+  - first:
+      213: -5432671739701693016
+    second: Rin_51
+  - first:
+      213: -7564609960210427192
+    second: Rin_52
+  - first:
+      213: -4972367955324938179
+    second: Rin_53
+  - first:
+      213: 5947492929227186021
+    second: Rin_54
+  - first:
+      213: -3869346395564977646
+    second: Rin_55
+  - first:
+      213: 8701670918713484882
+    second: Rin_56
+  - first:
+      213: 2406172682259885553
+    second: Rin_57
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 110
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rin_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 2358
+        width: 204
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0576c67b38d9ce100800000000000000
+      internalID: 138658877585254224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_1
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 2375
+        width: 148
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 2, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d53d0a3b15d01ea0800000000000000
+      internalID: -5903984798567942696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_2
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 2358
+        width: 206
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced9d0138d805fa30800000000000000
+      internalID: 4248311548122865132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_3
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 2376
+        width: 353
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c824a99b55d50ccb0800000000000000
+      internalID: -4845770576283155828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_4
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 2328
+        width: 119
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97e3b27abff893a0800000000000000
+      internalID: -6658290872813885537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_5
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 2328
+        width: 77
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de08029ddef250220800000000000000
+      internalID: 2451418270769643757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_6
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2329
+        width: 43
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53068fd873cf4000800000000000000
+      internalID: 22451447073735519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_7
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 2328
+        width: 95
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e909391802022820800000000000000
+      internalID: 2891876144531442146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_8
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 2329
+        width: 59
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040cb352f6ae340f0800000000000000
+      internalID: -1133804918080290752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1720
+        width: 238
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80738e101f9df2bb0800000000000000
+      internalID: -4958505035569285368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_10
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1737
+        width: 206
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf9c5ac2566c2c70800000000000000
+      internalID: 8947639065446752180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_11
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1720
+        width: 250
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c864744bb33264cd0800000000000000
+      internalID: -2574331397661047156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_12
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 1716
+        width: 280
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56651a014bae8c380800000000000000
+      internalID: -8950646200304839067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1680
+        width: 272
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e19c3ebaf527bb0800000000000000
+      internalID: -4939780649406357904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_14
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1680
+        width: 196
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0a9f99e2aec31a0800000000000000
+      internalID: -6828325449127845685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_15
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1678
+        width: 129
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01993c2f2e40a460800000000000000
+      internalID: 7250881364578898190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_16
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 1680
+        width: 145
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410ebd3137e65e9a0800000000000000
+      internalID: -6204431471099518956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_17
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 1684
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65de722422842ec10800000000000000
+      internalID: 2081305289774591318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_18
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1025
+        width: 205
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad016323d61cf6810800000000000000
+      internalID: 1760838654063153370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_19
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 1042
+        width: 212
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ccb44685b7d56b0800000000000000
+      internalID: -5305949166402548592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_20
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 1042
+        width: 212
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84611e0bcdf140b0800000000000000
+      internalID: -5746032600991832949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_21
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 992
+        width: 293
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebc577434cc04020800000000000000
+      internalID: 2324081997056953321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_22
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 992
+        width: 125
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08bddd7d963f86bb0800000000000000
+      internalID: -4942432955120362624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_23
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 993
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d7bd7701dbbdbd0800000000000000
+      internalID: -2604280081075700434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_24
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 993
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff66a8b9d338a51d0800000000000000
+      internalID: -3361229871252871425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_25
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 993
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7604d9d4bbc34d0f0800000000000000
+      internalID: -1093182034385485721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_26
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 993
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2f92c7334d5c5b0800000000000000
+      internalID: -5348635664841051400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_27
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 993
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461f5ec51d3877a00800000000000000
+      internalID: 754216397837824356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_28
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 993
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59ccf235a4969f90800000000000000
+      internalID: -6947201937926469285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_29
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 992
+        width: 60
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422445dd89c11d680800000000000000
+      internalID: -8732166759620787676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_30
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 993
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b237d74fc112f8b0800000000000000
+      internalID: -5120010244405644622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_31
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 992
+        width: 81
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75574d3089629b860800000000000000
+      internalID: 7546105084977116503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_32
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 412
+        width: 526
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e208ebc7f4a8473d0800000000000000
+      internalID: -3209788560408412114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_33
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 603
+        width: 106
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f13950c5c507b1a0800000000000000
+      internalID: -6793955165971336712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_34
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 655
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7bc028e3550d8d0800000000000000
+      internalID: -2823663239403096125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_35
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 475
+        width: 153
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390515794e3514c90800000000000000
+      internalID: -7187371289050263405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_36
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 485
+        width: 71
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6058b275f6134d0800000000000000
+      internalID: -3156619443627030817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_37
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 467
+        width: 166
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f606099c15c74bed0800000000000000
+      internalID: -2399156010765754257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_38
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 374
+        width: 137
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d1732c9f5975a60800000000000000
+      internalID: 7662758190931975580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_39
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 375
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c327b19df9b49d550800000000000000
+      internalID: 6186058713084424764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_40
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 374
+        width: 119
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f851ba647c638630800000000000000
+      internalID: 3928102547259218164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_41
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 374
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2550e258a89fa3e0800000000000000
+      internalID: -2040244257463184086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_42
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 374
+        width: 93
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268db615e7c1044a0800000000000000
+      internalID: -6611252924122408862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_43
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 44
+        width: 320
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e3b760ad97802c0800000000000000
+      internalID: -4465185053219275258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_44
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 61
+        width: 246
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed24930b7f77b7340800000000000000
+      internalID: 4862612128373752542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_45
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 189
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851ef40580eb79410800000000000000
+      internalID: 1483863545158295896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_46
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 189
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b57ede4e9d2d080800000000000000
+      internalID: -9164022714478404752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_47
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 179
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f909504378f9eb00800000000000000
+      internalID: 858490377875294711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_48
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 167
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9c56133858260f0800000000000000
+      internalID: -1125190158373238344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_49
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 50
+        width: 177
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7404cc7c173e4fae0800000000000000
+      internalID: -1516337096694153145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_50
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 166
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23092a3a4decf08a0800000000000000
+      internalID: -6336618738013269966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_51
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 45
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5f6c516d54b94b0800000000000000
+      internalID: -5432671739701693016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_52
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 56
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c29649f15b150790800000000000000
+      internalID: -7564609960210427192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_53
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 161
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38525a70b99efab0800000000000000
+      internalID: -4972367955324938179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_54
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 0
+        width: 124
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fdbb6de4db98250800000000000000
+      internalID: 5947492929227186021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_55
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 0
+        width: 119
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212596334f15d4ac0800000000000000
+      internalID: -3869346395564977646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_56
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 0
+        width: 224
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256a34ed89b82c870800000000000000
+      internalID: 8701670918713484882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rin_57
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 0
+        width: 119
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd695a5e41746120800000000000000
+      internalID: 2406172682259885553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
