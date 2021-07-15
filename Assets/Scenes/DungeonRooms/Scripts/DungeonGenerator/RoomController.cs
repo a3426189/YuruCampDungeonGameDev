@@ -31,14 +31,13 @@ public class RoomController : MonoBehaviour
     public static RoomController instance;
 
     string Current_WorldName = "basement";
-    Room CurrentRoom;
-    RoomData Current_RoomData;
-    //Current_LoadRoomData.name;
-    Queue<RoomData> RoomDataQueue = new Queue<RoomData>();
+    public Room CurrentRoom;
+    RoomData Current_LoadingRoomData;
+    Queue<RoomData> LoadingRoomDataQueue = new Queue<RoomData>();
 
     public List<Room> Loaded_RoomList = new List<Room>();
 
-    bool isLoadingRoom = false;
+    public bool isLoadingRoom = false;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -47,8 +46,7 @@ public class RoomController : MonoBehaviour
 
     private void Start()
     {
-        CreateRoomData("Start", 0, 0);
-        CreateRoomData("Start", 1, 0);
+        CreateRoomData("Start", 0, 0); //test can't spawn room at same spot
     }
 
     private void Update()
@@ -61,25 +59,25 @@ public class RoomController : MonoBehaviour
         {
             return;
         }
-       if (RoomDataQueue.Count == 0)
+       if (LoadingRoomDataQueue.Count == 0)
         {
             return;
         }
-        Current_RoomData = RoomDataQueue.Dequeue();
+        Current_LoadingRoomData = LoadingRoomDataQueue.Dequeue();
+        StartCoroutine(LoadingRoomRoutine(Current_LoadingRoomData));
         isLoadingRoom = true;
-        StartCoroutine(LoadRoomRoutine(Current_RoomData));
     }
     public void CreateRoomData(string name, int x ,int y)
     {
-        if (DoesRoomExist(x, y))
+        if (!DoesRoomExist(x, y))
         {
-            return;
+            //Debug.Log("不重複!"+ x + "," + y);
+            RoomData NewRoomData = new RoomData(name, x, y);
+            LoadingRoomDataQueue.Enqueue(NewRoomData);
         }
-        RoomData NewRoomData = new RoomData(name,x,y);
-        RoomDataQueue.Enqueue(NewRoomData);
     }
 
-    IEnumerator LoadRoomRoutine(RoomData roomData)
+    IEnumerator LoadingRoomRoutine(RoomData roomData)
     {
         string RoomName = Current_WorldName + roomData.name;//SceneName
         AsyncOperation loadRoom = SceneManager.LoadSceneAsync(RoomName,LoadSceneMode.Additive);
@@ -90,43 +88,68 @@ public class RoomController : MonoBehaviour
     }
     public void RegisterRoom(Room room)
     {
-        
-        room.transform.position = new Vector3(
-            Current_RoomData.X * room.Width,
-            Current_RoomData.Y * room.Height,
-            0
-        );
-        room.X = Current_RoomData.X;
-        room.Y = Current_RoomData.Y;
-        room.name = Current_WorldName + "-" + Current_RoomData.name + " {" + room.X +","+ room.Y +"}";
-        //room.transform.parent = transform;//?
-
-        if (Loaded_RoomList.Count == 0)//起始點
+        if (!DoesRoomExist(Current_LoadingRoomData.X, Current_LoadingRoomData.Y))
         {
-            CameraController.Instance.currRoom = room;
-        }
+            room.transform.position = new Vector3(
+            Current_LoadingRoomData.X * room.Width,
+            Current_LoadingRoomData.Y * room.Height,
+            0
+            );
+            room.X = Current_LoadingRoomData.X;
+            room.Y = Current_LoadingRoomData.Y;
+            room.name = Current_WorldName + "-" + Current_LoadingRoomData.name + " {" + room.X + "," + room.Y + "}";
+            //room.transform.parent = transform;//?
 
-        isLoadingRoom = false;
-        Loaded_RoomList.Add(room);
+            if (Loaded_RoomList.Count == 0)//起始點
+            {
+                CameraController.Instance.currRoom = room;
+            }
+            
+
+            Loaded_RoomList.Add(room);
+            isLoadingRoom = false;
+            
+        }
     }
 
 
     public bool DoesRoomExist(int x , int y)
     {
-
-        if (Loaded_RoomList.Find(Room => Room.X == x && Room.Y == y) != null)
+        foreach (Room Loaded_room in Loaded_RoomList)
         {
-            return true;
+            if (Loaded_room.X == x && Loaded_room.Y == y)
+            {
+                Debug.Log("重複 " + x + "," + y);
+
+                return true;
+            }
         }
         return false;
-        
     }
 
     public void OnPlayerEnterRoom(Room room)
     {
-        
         CurrentRoom = room;
         CameraController.Instance.currRoom = room;
+    }
+
+    public Room FindRoom(int x ,int y)
+    {
+        foreach (Room Loaded_room in Loaded_RoomList)
+        {
+            if (Loaded_room.X == x && Loaded_room.Y == y)
+            {
+                return Loaded_room;
+            }
+        }
+        return null;
+    }
+    public void RemoveDoors()
+    {
+        foreach (var room in Loaded_RoomList)
+        {
+            room.RemoveUnconnectedDoors();
+        }
     }
     
 }
