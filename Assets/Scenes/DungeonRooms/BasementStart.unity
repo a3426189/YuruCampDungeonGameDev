@@ -437,6 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 3
+  CloseDoor: {fileID: 113271052}
 --- !u!1 &87042653
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,7 +852,7 @@ Transform:
   - {fileID: 963755828}
   - {fileID: 1531660593}
   m_Father: {fileID: 1921435887}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &194603517
 BoxCollider2D:
@@ -974,6 +975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  CloseDoor: {fileID: 818986567}
 --- !u!1 &248596111
 GameObject:
   m_ObjectHideFlags: 0
@@ -2067,7 +2069,7 @@ Transform:
   - {fileID: 1886632638}
   - {fileID: 797116879}
   m_Father: {fileID: 1921435887}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &818986569
 BoxCollider2D:
@@ -2306,8 +2308,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 158374749
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d199e4ad30daffb4088f052b2a8e86ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2815,7 +2817,7 @@ Transform:
   - {fileID: 476400050}
   - {fileID: 61611643}
   m_Father: {fileID: 1921435887}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1296545183
 BoxCollider2D:
@@ -3019,6 +3021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  CloseDoor: {fileID: 194603515}
 --- !u!1 &1528634880
 GameObject:
   m_ObjectHideFlags: 0
@@ -3167,8 +3170,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 158374749
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0ad92aa379500714baee27d9a7aff6c4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4144,9 +4147,9 @@ Transform:
   - {fileID: 624168138}
   - {fileID: 1991757700}
   - {fileID: 704202544}
-  - {fileID: 194603516}
   - {fileID: 818986568}
   - {fileID: 1296545182}
+  - {fileID: 194603516}
   - {fileID: 113271053}
   m_Father: {fileID: 401605637}
   m_RootOrder: 0
@@ -4472,6 +4475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 2
+  CloseDoor: {fileID: 1296545181}
 --- !u!1 &2077455162
 GameObject:
   m_ObjectHideFlags: 0

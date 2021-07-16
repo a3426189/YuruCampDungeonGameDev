@@ -175,9 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196eba73d4e3b8c4dacdb1d79ac34b0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1491693940076167990}
-  EnemyBullet: {fileID: 6356764961091561230, guid: 0b0c25445ed1ef6439d3fc9dab8712f9,
-    type: 3}
+  HealBar: {fileID: 127889820295657422, guid: 14ac3aa4fb146ec42929c2d7564b7f0f, type: 3}
   moveSpeed: 1
 --- !u!114 &2794297888365221915
 MonoBehaviour:
@@ -417,12 +415,6 @@ PrefabInstance:
 --- !u!224 &280062576172623661 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5639934415907063521, guid: 14ac3aa4fb146ec42929c2d7564b7f0f,
-    type: 3}
-  m_PrefabInstance: {fileID: 5595697342310408652}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1491693940076167990 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6418868248516076282, guid: 14ac3aa4fb146ec42929c2d7564b7f0f,
     type: 3}
   m_PrefabInstance: {fileID: 5595697342310408652}
   m_PrefabAsset: {fileID: 0}

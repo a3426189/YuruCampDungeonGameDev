@@ -6,25 +6,28 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public GameObject EnemySpawn;
-
-
     private HashSet<GameObject> takenDamageFrom = new HashSet<GameObject>();
+
     public GameObject HealthBar;
     private HealBar healBar;
+
     public float speed;
+                
     private Vector2 moveVelocity;
     
     private Unit PlayerUnit;
-
     private Vector2 mousepos;
-    private Rigidbody2D rb;
+
+    private Rigidbody2D rb2D;
+
     public Camera cam;
+
     // Start is called before the first frame update
     private void Awake()
     {
         PlayerUnit = GetComponent<Unit>();
         healBar = HealthBar.GetComponent<HealBar>();
-        rb = GetComponent<Rigidbody2D>();
+        rb2D = GetComponent<Rigidbody2D>();
     }
     void Start()
     {
@@ -34,27 +37,23 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mousepos = cam.ScreenToWorldPoint(Input.mousePosition);
         healBar.SetHealth(PlayerUnit.currentHP);
         LookAtMouse();
         Inputs();
     }
-    private void FixedUpdate()
-    {
-        
-        rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime); //移動
-        
-    }
+    
     private void LookAtMouse()
     {
-        Vector2 lookDir = mousepos - rb.position;
+        mousepos = cam.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 lookDir = mousepos - rb2D.position;
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 180f;
-        rb.rotation = angle;
+        rb2D.rotation = angle;
     }
     private void Inputs()
     {
-        Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        moveVelocity = moveInput.normalized * speed;
+        float MoveH = Input.GetAxis("Horizontal");
+        float MoveV = Input.GetAxis("Vertical");
+        rb2D.velocity = new Vector2(MoveH * speed, MoveV * speed);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -77,11 +76,7 @@ public class Player : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
-        if (collision.gameObject.tag == "Enemy2")
-        {
-            Unit Enemy1Unit = collision.gameObject.GetComponent<Unit>();
-            PlayerUnit.TakeDamage(Enemy1Unit.damage);
-        }
+        //if (collision.gameObject.tag == ) ;
     }
     private bool IsDead()
     {

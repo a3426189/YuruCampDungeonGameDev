@@ -11,8 +11,7 @@ public class Door:MonoBehaviour
         left,
         down
     }
-
     public DoorType doorType;
-   
+    public GameObject CloseDoor;
     
 }

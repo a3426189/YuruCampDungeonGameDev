@@ -12,13 +12,14 @@ enum Difficulty
 }
 public class EnemySpawn : MonoBehaviour
 {
+    public GameObject[] objects;
+
+    public List<GameObject> Enemy_gameObjects;
+    public List<GameObject> Spawned_Enemys;
     public int Enemy1_Count;
     public int Enemy2_Count;
-
-
     public GameObject player;
-    public GameObject EnemyPrefab_1;
-    public GameObject EnemyPrefab_2;
+
     public float minDistance = 1.5f;
     
     Difficulty difficulty;
@@ -41,85 +42,28 @@ public class EnemySpawn : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        player = GameObject.FindWithTag("player");
-        PlayerUnit = player.GetComponent<Unit>();
+        Spawn();
+        //player = GameObject.FindWithTag("player");
+        //PlayerUnit = player.GetComponent<Unit>();
 
-        difficulty = Difficulty.easy;
-        SetDifficulty();
+        //difficulty = Difficulty.easy;
+        //SetDifficulty();
         
     }
 
     // Update is called once per frame
 
-    private void Update()
-    {
-        //Debug.Log(EnemyGameObjectList.Count);
-        if (EnemyGameObjectList.Count > 0)
-        {
-            for (int i = 0; i < EnemyGameObjectList.Count; i++)
-            {
-                GameObject GO = EnemyGameObjectList[i];
-                CheckGameObjectIsAlive(GO);
-            }
-        }
-        time += Time.deltaTime;
-        Spawntime += Time.deltaTime;
-        
-        SetDifficulty();
-
-        if (Spawntime >= repeatSpawnTime)
-        {
-            Spawn();
-            Spawntime -= repeatSpawnTime;
-        }
-
-        
-        
-
-    }
+    
     private void Spawn()
     {
-        too_close = false;
-        int SpawnEnemyKinds = Random.Range(1, 4);
-        GameObject EnemyGO;
-        switch (SpawnEnemyKinds)
-        {
-            case (1):
-                EnemyGO = EnemyPrefab_1;
-                break;
-            case (2):
-                EnemyGO = EnemyPrefab_2;
-                break;
-            default:
-                EnemyGO = EnemyPrefab_1;
-                break;
-        }
-        Vector3 minScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 0));
-        Vector3 maxScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        //too_close = false;
+        int  RandomInt= Random.Range(0, objects.Length);
+        Instantiate(objects[RandomInt],transform.position,Quaternion.identity);
 
-        //Vector3 position = new Vector3(Random.Range(-8.0f, 6.0f), Random.Range(-4f, 4f), 0);
-        Vector3 position = new Vector3(Random.Range(minScreenBounds.x, maxScreenBounds.x), Random.Range(minScreenBounds.y, maxScreenBounds.y), 0);
-        if (Vector3.Distance(player.transform.position, EnemyGO.transform.position) < minDistance)
-            too_close = true;
+        //GameObject EnemyGO = Instantiate(EnemyGameObjectList[RandomInt], position, Quaternion.identity); ;
         
-        if (EnemyGameObjectList.Count > 0)
-        {
-            for(int i = 0;i< EnemyGameObjectList.Count; i++)
-            {
-                GameObject GO = EnemyGameObjectList[i];
-                if ((Vector3.Distance(GO.transform.position, position) < minDistance))
-                {
-                    too_close = true;
-                }
-            }
-        }
-        if (!too_close && (EnemyGameObjectList.Count < EnemyAmount))
-        {
-            GameObject EnemyGameObject = Instantiate(EnemyGO, position, Quaternion.identity);
-            EnemyGameObjectList.Add(EnemyGameObject);
-        }
-        
-        
+
+
     }
     private bool CheckGameObjectIsAlive(GameObject GO)
     {
@@ -185,7 +129,6 @@ public class EnemySpawn : MonoBehaviour
                     difficulty = Difficulty.hard;
                     Debug.Log(difficulty + " " + EnemyAmount);
                 }
-                
                 break;
             case (Difficulty.hard):
                 repeatSpawnTime = 1f;

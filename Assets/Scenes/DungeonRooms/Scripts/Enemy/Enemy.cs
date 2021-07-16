@@ -4,42 +4,44 @@ using UnityEngine;
 using TMPro;
 public class Enemy : MonoBehaviour
 {
-    public GameObject prefab;
-    public GameObject EnemyBullet;
+    //public GameObject HealBar;
 
     public float moveSpeed;
     private Rigidbody2D rb;
     private GameObject player;
-    
-    private HealBar healthbar;
+
+    //private HealBar healthbar;
 
     private Unit EnemyUnit;
 
     int Temp;
     private void Awake()
     {
-        healthbar = prefab.GetComponent<HealBar>();
+        //healthbar = HealBar.GetComponent<HealBar>();
         EnemyUnit = gameObject.GetComponent<Unit>();
         player = GameObject.FindWithTag("player");
         rb = GetComponent<Rigidbody2D>();
-        
+
     }
     private void Start()
     {
-        healthbar.SetMaxHealth(EnemyUnit.maxHP);
+        //healthbar.SetMaxHealth(EnemyUnit.maxHP);
     }
     private void Update()
     {
-        if (Temp != EnemyUnit.currentHP)
+        if (EnemyUnit.currentHP <= 0)
         {
-            healthbar.SetHealth(EnemyUnit.currentHP);
+            Destroy(gameObject);
         }
-        OnEnable();
-        Temp = EnemyUnit.currentHP;
+        //healthbar.SetHealth(EnemyUnit.currentHP);
+        //OnEnable();
+
         LookAtPlayer();
     }
+    
     private void LookAtPlayer()
     {
+        
         Vector2 PlayerVector2Pos = new Vector2(player.transform.position.x, player.transform.position.y);
         Vector2 EnemyVector2Pos = transform.position;
         Vector2 lookDir = PlayerVector2Pos - EnemyVector2Pos;

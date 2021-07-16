@@ -19,7 +19,6 @@ public class CameraController : MonoBehaviour
         {
             UpdataCameraPosition();
         }
-            
     }
 
     void UpdataCameraPosition()

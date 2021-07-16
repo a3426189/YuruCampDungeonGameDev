@@ -4,59 +4,42 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    
+    public string ShootSound = "ShootSound";
     public Transform FirePos;
+    
     //public Transform SpawnPos;
-    public GameObject Bullet;
-    public float bullectDestoryTime = 2f;
-    public float bulletForce = 15f;
-    [SerializeField]
-    private float timeMax;
+    public GameObject BulletPrefab;
+    public float bullectDestoryTime;
+    public float bulletForce;
+    public float CanFirePreiod;
+    
+    bool CanFire = true;
 
-    private float Store_timeMax;
+    public bool IsUsing_Ult;
+    float UltTime = 0;
+    float UltTimeMax = 5f;
 
-    [SerializeField]
-    private float BuffTimeMax;
-
-    private float BuffTime;
-    public bool GetBuff;
-
-    private bool CanFire = true;
-    private void Awake()
-    {
-        Store_timeMax = timeMax;
-    }
     public void Update()
     {
-        if (GetBuff == false)
+        if (IsUsing_Ult)
         {
-            BuffTime += Time.deltaTime;
-            if (BuffTime > BuffTimeMax)
+            CanFirePreiod = 0.1f;
+            UltTime += Time.deltaTime;
+            if (UltTimeMax < UltTime)
             {
-                BuffTime -= BuffTimeMax;
-                timeMax = Store_timeMax;
+                UltTime = 0;
+                IsUsing_Ult = false;
+                CanFirePreiod = 0.5f;
             }
         }
         
-        if (GetBuff)
-        {
-            GetBuff = !GetBuff;
-            
-            timeMax = 0.1f;
-            BuffTime = 0;
-            
-        }
+
         if (Input.GetButton("Fire1") && CanFire)
         {
             Shoot();
-
             CanFire = false;
-            Invoke("canfire", timeMax);
+            Invoke("canfire", CanFirePreiod);
         }
-    }
-    private void DisableBuff()
-    {
-        GetBuff = false;
     }
     private void canfire()
     {
@@ -64,13 +47,11 @@ public class Shooting : MonoBehaviour
     }
     private void Shoot()
     {
-        string ShootSound = "ShootSound";
         FindObjectOfType<SoundManager>().Play(ShootSound);
-        //GameObject Decorate = Instantiate(Bullet, SpawnPos.position, SpawnPos.rotation);
-        GameObject bullet = Instantiate(Bullet, FirePos.position, FirePos.rotation);
-        Destroy(bullet, bullectDestoryTime);
+        GameObject bullet = Instantiate(BulletPrefab, FirePos.position, FirePos.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(-FirePos.right * bulletForce, ForceMode2D.Impulse);
-        
+        Destroy(bullet, bullectDestoryTime);
+
     }
 }

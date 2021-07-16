@@ -175,9 +175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 196eba73d4e3b8c4dacdb1d79ac34b0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 9032010000450646985}
-  EnemyBullet: {fileID: 0}
-  moveSpeed: 0.1
+  HealBar: {fileID: 127889820295657422, guid: 14ac3aa4fb146ec42929c2d7564b7f0f, type: 3}
+  moveSpeed: 0.25
 --- !u!114 &-3518158352765474588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,6 +284,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 1.7361946
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070784312676840996, guid: 14ac3aa4fb146ec42929c2d7564b7f0f,
+        type: 3}
+      propertyPath: m_IgnoreReversedGraphics
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5639934415907063521, guid: 14ac3aa4fb146ec42929c2d7564b7f0f,
         type: 3}
@@ -416,12 +420,6 @@ PrefabInstance:
 --- !u!224 &7640728317012957138 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5639934415907063521, guid: 14ac3aa4fb146ec42929c2d7564b7f0f,
-    type: 3}
-  m_PrefabInstance: {fileID: 2615539787342762291}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &9032010000450646985 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6418868248516076282, guid: 14ac3aa4fb146ec42929c2d7564b7f0f,
     type: 3}
   m_PrefabInstance: {fileID: 2615539787342762291}
   m_PrefabAsset: {fileID: 0}

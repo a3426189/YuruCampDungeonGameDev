@@ -5,6 +5,8 @@ using UnityEngine;
 public class Room : MonoBehaviour
 {
     //public RoomController roomController;
+    
+
     public int Width; 
     public int Height;
     public int X;
@@ -22,10 +24,10 @@ public class Room : MonoBehaviour
     private void Awake()
     {
         RoomController.instance.RegisterRoom(this);
-        
     }
     private void Start()
     {
+        
         Door[] Ds = GetComponentsInChildren<Door>();
         foreach (Door door in Ds)
         {
@@ -49,10 +51,6 @@ public class Room : MonoBehaviour
 
     }
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void RemoveUnconnectedDoors()
     {
         foreach (Door door in DoorList)
@@ -62,29 +60,29 @@ public class Room : MonoBehaviour
                 case Door.DoorType.up:
                     if (GetUpRoom() == null)
                     {
+                        door.CloseDoor.SetActive(true);
                         door.gameObject.SetActive(false);
-                        GameObject.Find("TopCloseDoor").SetActive(true);
                     }
                     break;
                 case Door.DoorType.down:
                     if (GetDownRoom() == null)
                     {
+                        door.CloseDoor.SetActive(true);
                         door.gameObject.SetActive(false);
-                        GameObject.Find("BottomCloseDoor").SetActive(true);
                     }
                     break;
                 case Door.DoorType.right:
                     if (GetRightRoom() == null)
                     {
+                        door.CloseDoor.SetActive(true);
                         door.gameObject.SetActive(false);
-                        GameObject.Find("RightCloseDoor").SetActive(true);
                     }
                     break;
                 case Door.DoorType.left:
                     if (GetLeftRoom() == null)
                     {
+                        door.CloseDoor.SetActive(true);
                         door.gameObject.SetActive(false);
-                        GameObject.Find("LeftCloseDoor").SetActive(true);
                     }
                     break;
             }
@@ -117,9 +115,9 @@ public class Room : MonoBehaviour
     }
     public Room GetDownRoom()
     {
-        if (RoomController.instance.DoesRoomExist(X , Y + 1))
+        if (RoomController.instance.DoesRoomExist(X , Y - 1))
         {
-            return RoomController.instance.FindRoom(X , Y + 1);
+            return RoomController.instance.FindRoom(X , Y - 1);
         }
         return null;
     }
@@ -134,7 +132,7 @@ public class Room : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "player" || collision.gameObject.tag == "Player")
         {
             
             //controller.OnPlayerEnterRoom(this);

@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DungeonRooms/BasementStart.unity
     guid: ce3d21432793a9544a005da46b1dc19a
+  - enabled: 1
+    path: Assets/Scenes/DungeonRooms/BasementEmpty.unity
+    guid: 8292e3a2c30f8fe43a51407dbe851633
+  - enabled: 1
+    path: Assets/Scenes/DungeonRooms/BasementEnd.unity
+    guid: 4438a32c23af0204c8793af803f7e3df
   m_configObjects: {}

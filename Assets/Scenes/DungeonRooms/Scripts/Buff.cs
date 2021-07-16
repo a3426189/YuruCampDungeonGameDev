@@ -17,7 +17,7 @@ public class Buff : MonoBehaviour
     {
         if (collision.gameObject.tag == "player")
         {
-            PlayerGo.GetComponent<Shooting>().GetBuff = true;
+            //PlayerGo.GetComponent<Shooting>().GetBuff = true;
             Destroy(gameObject);
         }
             

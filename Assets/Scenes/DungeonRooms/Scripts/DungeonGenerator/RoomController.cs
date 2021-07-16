@@ -46,7 +46,7 @@ public class RoomController : MonoBehaviour
 
     private void Start()
     {
-        CreateRoomData("Start", 0, 0); //test can't spawn room at same spot
+        //CreateRoomData("Start", 0, 0); //test can't spawn room at same spot
     }
 
     private void Update()
@@ -55,17 +55,15 @@ public class RoomController : MonoBehaviour
     }
     private void UpdateRoomQueue()
     {
-       if (isLoadingRoom)
-        {
-            return;
-        }
-       if (LoadingRoomDataQueue.Count == 0)
-        {
-            return;
-        }
+        
+        if (LoadingRoomDataQueue.Count == 0)
+         {
+             return;
+         }
+        
         Current_LoadingRoomData = LoadingRoomDataQueue.Dequeue();
         StartCoroutine(LoadingRoomRoutine(Current_LoadingRoomData));
-        isLoadingRoom = true;
+
     }
     public void CreateRoomData(string name, int x ,int y)
     {
@@ -74,12 +72,15 @@ public class RoomController : MonoBehaviour
             //Debug.Log("不重複!"+ x + "," + y);
             RoomData NewRoomData = new RoomData(name, x, y);
             LoadingRoomDataQueue.Enqueue(NewRoomData);
+            isLoadingRoom = true;
         }
     }
 
     IEnumerator LoadingRoomRoutine(RoomData roomData)
     {
+        
         string RoomName = Current_WorldName + roomData.name;//SceneName
+        
         AsyncOperation loadRoom = SceneManager.LoadSceneAsync(RoomName,LoadSceneMode.Additive);
         while(!loadRoom.isDone)
         {
@@ -90,15 +91,18 @@ public class RoomController : MonoBehaviour
     {
         if (!DoesRoomExist(Current_LoadingRoomData.X, Current_LoadingRoomData.Y))
         {
+            Debug.Log(room.Width + ","  + room.Height);
+
             room.transform.position = new Vector3(
             Current_LoadingRoomData.X * room.Width,
             Current_LoadingRoomData.Y * room.Height,
             0
             );
+            
             room.X = Current_LoadingRoomData.X;
             room.Y = Current_LoadingRoomData.Y;
             room.name = Current_WorldName + "-" + Current_LoadingRoomData.name + " {" + room.X + "," + room.Y + "}";
-            //room.transform.parent = transform;//?
+            //room.transform.parent = transform;
 
             if (Loaded_RoomList.Count == 0)//起始點
             {
@@ -108,8 +112,8 @@ public class RoomController : MonoBehaviour
 
             Loaded_RoomList.Add(room);
             isLoadingRoom = false;
-            
         }
+        
     }
 
 
@@ -119,7 +123,7 @@ public class RoomController : MonoBehaviour
         {
             if (Loaded_room.X == x && Loaded_room.Y == y)
             {
-                Debug.Log("重複 " + x + "," + y);
+                //Debug.Log("重複 " + x + "," + y);
 
                 return true;
             }
