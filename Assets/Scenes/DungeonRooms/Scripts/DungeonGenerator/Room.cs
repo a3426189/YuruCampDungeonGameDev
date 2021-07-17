@@ -5,7 +5,7 @@ using UnityEngine;
 public class Room : MonoBehaviour
 {
     //public RoomController roomController;
-    
+    public GameObject MonsterSpawn;
 
     public int Width; 
     public int Height;
@@ -19,6 +19,8 @@ public class Room : MonoBehaviour
     public Door Down_Door;
 
     public List<Door> DoorList;
+
+
     // RoomController controller;
     // Start is called before the first frame update
     private void Awake()
@@ -134,10 +136,19 @@ public class Room : MonoBehaviour
     {
         if (collision.gameObject.tag == "player" || collision.gameObject.tag == "Player")
         {
-            
-            //controller.OnPlayerEnterRoom(this);
             RoomController.instance.OnPlayerEnterRoom(this);
+            if (GameManager.Instance.PlayerVisited.Contains(new Vector2(this.X, this.Y)))
+            {
+                return;//作用:不重複生怪
+            }
+            else
+            {
+                GameManager.Instance.PlayerVisited.Add(new Vector2(this.X, this.Y));
+            }
+            //controller.OnPlayerEnterRoom(this);
+            if(MonsterSpawn != null)
+                MonsterSpawn.SetActive(true);
+            //MonsterSpawn.SetActive(false);
         }
-        
     }
 }

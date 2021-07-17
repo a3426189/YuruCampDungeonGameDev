@@ -10,11 +10,39 @@ public class Enemy_Shooting : MonoBehaviour
     public GameObject Bullet;
     public float bullectDestoryTime = 6f;
     public float bulletForce = 3f;
-    
 
-    public void Start()
+    private float ShootTime;
+    public float ShootTimeMax;
+    public Room room;
+
+    private void Start()
     {
-        InvokeRepeating("Shoot", 1f, 2f);
+        room = RoomController.instance.CurrentRoom;
+
+        //InvokeRepeating("Shoot", 1f, 2f);
+    }
+    private void Update()
+    {
+        
+        if (room == RoomController.instance.CurrentRoom)
+        {
+            if (ReadyShoot())
+            {
+                Shoot();
+
+                //Shoot();
+            }
+        }
+    }
+    private bool ReadyShoot()
+    {
+        ShootTime += Time.deltaTime;
+        if (ShootTime >= ShootTimeMax)
+        {
+            ShootTime = 0;
+            return true;
+        }
+        return false;
     }
     private void Shoot()
     {

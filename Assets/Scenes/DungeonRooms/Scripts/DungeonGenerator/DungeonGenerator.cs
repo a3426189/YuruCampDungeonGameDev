@@ -11,7 +11,7 @@ public class DungeonGenerator : MonoBehaviour
 
     bool isDone = false;
 
-    private string[] RoomNameArray = { };
+    private string[] RoomNameArray = { "Empty","Special","Reward"};
 
     private void Start()
     {
@@ -49,7 +49,9 @@ public class DungeonGenerator : MonoBehaviour
     {
         if (!RoomController.instance.isLoadingRoom)
         {
-            RoomController.instance.CreateRoomData("Empty", LocationOfDungeonRooms[IndexOfLocationOfDungeonRooms].x, LocationOfDungeonRooms[IndexOfLocationOfDungeonRooms].y);
+            int Randint = Random.Range(0, RoomNameArray.Length);
+            string roomName = RoomNameArray[Randint];
+            RoomController.instance.CreateRoomData(roomName, LocationOfDungeonRooms[IndexOfLocationOfDungeonRooms].x, LocationOfDungeonRooms[IndexOfLocationOfDungeonRooms].y);
             IndexOfLocationOfDungeonRooms++;
         }
         yield return null;

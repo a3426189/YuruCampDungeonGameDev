@@ -17,7 +17,7 @@ public class Point : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Score = enemySpawn.Enemy1_Count * 100 + enemySpawn.Enemy2_Count * 300;
+        Score = GameManager.Instance.EnemyKilled;
         textMesh.SetText(Score.ToString());
     }
 }

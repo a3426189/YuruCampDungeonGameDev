@@ -91,7 +91,7 @@ public class RoomController : MonoBehaviour
     {
         if (!DoesRoomExist(Current_LoadingRoomData.X, Current_LoadingRoomData.Y))
         {
-            Debug.Log(room.Width + ","  + room.Height);
+            //Debug.Log(room.Width + ","  + room.Height);
 
             room.transform.position = new Vector3(
             Current_LoadingRoomData.X * room.Width,

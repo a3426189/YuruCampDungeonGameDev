@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public static Player Instance;
     public GameObject EnemySpawn;
     private HashSet<GameObject> takenDamageFrom = new HashSet<GameObject>();
 
@@ -21,10 +22,11 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb2D;
 
     public Camera cam;
-
+    
     // Start is called before the first frame update
     private void Awake()
     {
+        Instance = this;
         PlayerUnit = GetComponent<Unit>();
         healBar = HealthBar.GetComponent<HealBar>();
         rb2D = GetComponent<Rigidbody2D>();
@@ -55,29 +57,6 @@ public class Player : MonoBehaviour
         float MoveV = Input.GetAxis("Vertical");
         rb2D.velocity = new Vector2(MoveH * speed, MoveV * speed);
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        // If damager and not yet damaged (not contained in our references).
-        if (collision.gameObject.tag == "damage" && !takenDamageFrom.Contains(collision.gameObject))
-        {
-            //Debug.Log("GET");
-            PlayerUnit.TakeDamage(collision.gameObject.GetComponent<Unit>().damage);
-            Debug.Log(PlayerUnit.currentHP);
-            healBar.SetHealth(PlayerUnit.currentHP);
-            // Mark as damaged.
-            takenDamageFrom.Add(collision.gameObject);
-            //takenDamageFrom.Remove(collision.gameObject);
-            if (IsDead())
-            {
-                EnemySpawn enemySpawn = EnemySpawn.GetComponent<EnemySpawn>();
-                Debug.Log(enemySpawn.Enemy1_Count + " " + enemySpawn.Enemy2_Count);
-
-                takenDamageFrom.Clear();
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            }
-        }
-        //if (collision.gameObject.tag == ) ;
-    }
     private bool IsDead()
     {
         if (PlayerUnit.currentHP <= 0)
@@ -85,5 +64,19 @@ public class Player : MonoBehaviour
             return true;
         }
         return false;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "damage")
+        {
+            PlayerUnit.TakeDamage(1);
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "damage")
+        {
+            PlayerUnit.TakeDamage(1);
+        }
     }
 }

@@ -4,8 +4,14 @@ using UnityEngine;
 using UnityEngine.Audio;
 public class GameManager : MonoBehaviour
 {
-    //public static GameManager Instance;
-    
+    public static GameManager Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+    public int EnemyKilled;
+    public List<Vector2> PlayerVisited;
     public int GameLevel;
     public int GameScore;
 
@@ -18,7 +24,7 @@ public class GameManager : MonoBehaviour
         Not,
         Else,
     }
-
+    
 
     // Start is called before the first frame update
     
@@ -45,7 +51,7 @@ public class GameManager : MonoBehaviour
     }
     public void TestingHighScore()
     {
-        //GameScore = enemySpawn.GetEnemy_1_Count() + enemySpawn.GetEnemy_2_Count();
+        GameScore = EnemyKilled;
         if (PlayerPrefs.GetInt("highscore") < GameScore)
         {
             PlayerPrefs.SetInt("highscore", GameScore);

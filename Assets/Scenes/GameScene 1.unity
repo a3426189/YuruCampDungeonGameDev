@@ -728,6 +728,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e82ef3e843a2924aafc9fed11abe5f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemyKilled: 0
+  PlayerVisited: []
   GameLevel: 0
   GameScore: 0
   ES: {fileID: 1565699220}
@@ -1320,15 +1322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5660cdc45dd11468de6e01d9d60ee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy_gameObjects: []
-  Spawned_Enemys: []
-  Enemy1_Count: 0
-  Enemy2_Count: 0
-  player: {fileID: 8588809266616787492}
-  minDistance: 1.5
-  pfHealPosion: {fileID: 2746309173369655386, guid: f9d0524037cbd374ea913f7b17b813f3,
-    type: 3}
-  pfBuff: {fileID: 4506127261547831536, guid: 6c32e6766dcc84d4090f4febc2903352, type: 3}
+  objects: []
 --- !u!1 &1760424488
 GameObject:
   m_ObjectHideFlags: 0

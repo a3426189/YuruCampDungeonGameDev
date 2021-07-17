@@ -4,35 +4,26 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private string ENEMY1 = "Enemy1";
-    private string ENEMY2 = "Enemy2";
-
+    private string ENEMY = "Enemy";
     private GameObject player;
-
     [SerializeField] private GameObject pfDamagePopUp;
-
-    public GameObject EnemyPrefab_1;
-
     private Unit PlayerUnit;
-
     private Unit EnemyUnit_1;
-
     private Rigidbody2D rb;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindWithTag("player");
         PlayerUnit = player.GetComponent<Unit>();
-        EnemyUnit_1 = EnemyPrefab_1.GetComponent<Unit>();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         
-        if (collision.gameObject.tag == ENEMY2)
+        if (collision.gameObject.tag == ENEMY)
         {
             Unit EnemyUnit = collision.gameObject.GetComponent<Unit>();
-
-            showDamage();
+            //showDamage();
             EnemyUnit.TakeDamage(PlayerUnit.damage);
             Destroy(gameObject);
             //Debug.Log("Hit!");
@@ -41,12 +32,10 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == ENEMY1)
+        if (collision.gameObject.tag == ENEMY)
         {
             Unit EnemyUnit = collision.gameObject.GetComponent<Unit>();
-
-
-            showDamage();
+            //showDamage();
             EnemyUnit.TakeDamage(PlayerUnit.damage);
             Destroy(gameObject);
         }

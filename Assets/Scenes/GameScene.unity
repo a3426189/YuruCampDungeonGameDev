@@ -635,7 +635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currRoom: {fileID: 0}
-  moveSpeedWhenRoomChange: 300
+  moveSpeedWhenRoomChange: 50
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -687,7 +687,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.26, y: 0.36, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1054,9 +1054,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameLevel: 0
   GameScore: 0
-  lvPassConditions:
-  - EnemyKilled: 5
-    BossKilled: 1
   ES: {fileID: 1565699220}
 --- !u!4 &849548095
 Transform:
@@ -1212,7 +1209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174558776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.39441848, y: 3.2869139, z: -2368.0312}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1647,13 +1644,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5660cdc45dd11468de6e01d9d60ee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objects: []
+  Enemy_gameObjects: []
+  Spawned_Enemys: []
   Enemy1_Count: 0
   Enemy2_Count: 0
   player: {fileID: 8588809266616787492}
-  EnemyPrefab_1: {fileID: 55794437392543331, guid: 8b3cf24a20ad00444b6e0126ae6988b1,
-    type: 3}
-  EnemyPrefab_2: {fileID: 7578874547522018972, guid: f412ef4672c488345af41da3906e3bb2,
-    type: 3}
   minDistance: 1.5
   pfHealPosion: {fileID: 2746309173369655386, guid: f9d0524037cbd374ea913f7b17b813f3,
     type: 3}
@@ -2123,13 +2119,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3066856422f75b74c9640741a9a6efe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShootSound: ShootSound
   FirePos: {fileID: 8588809266988773263}
-  Bullet: {fileID: 7289391882795597830, guid: dba44ed49fd528941b00ebb88c40d902, type: 3}
+  BulletPrefab: {fileID: 0}
   bullectDestoryTime: 2
   bulletForce: 20
-  timeMax: 0.5
-  BuffTimeMax: 5
-  GetBuff: 0
+  CanFirePreiod: 0
+  IsUsing_Ult: 0
 --- !u!114 &8588809266616787503
 MonoBehaviour:
   m_ObjectHideFlags: 0
