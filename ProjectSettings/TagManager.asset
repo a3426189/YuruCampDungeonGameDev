@@ -9,6 +9,7 @@ TagManager:
   - PlayerBullet
   - Buff
   - Enemy
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -51,4 +52,7 @@ TagManager:
     locked: 0
   - name: Top
     uniqueID: 158374749
+    locked: 0
+  - name: Map
+    uniqueID: 3932800137
     locked: 0
