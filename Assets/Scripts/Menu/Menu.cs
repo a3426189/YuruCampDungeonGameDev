@@ -23,7 +23,7 @@ public class Menu : MonoBehaviour
         GameLevelText.text = "YuruCamp Dungeon";
         if (PlayerPrefs.GetInt("Score") > 0)
         {
-            GameLevelText.text = "ㄊ打倒了" + PlayerPrefs.GetInt("Score") +"個BOSS";
+            GameLevelText.text = "打倒了" + PlayerPrefs.GetInt("Score") +"個BOSS";
         }
     }
     public void StartGame()
